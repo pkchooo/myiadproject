@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My HTML5 Webpage</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body class="body">
+<header class="mainHeader"> <img src="img/FC_Barcelona_logo.png">
+  <nav>
+    <ul>
+      <li><a href="./index.html">News</a></li>
+      <li><a href="./football.html">Football</a></li>
+      <li class="active"><a href="#">Tickets</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="mainContent"> 
+  
+  <!--
+  <div class="content">
+-->
+  <div>
+    <article class="topcontent">
+      <header>
+        <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">Tickets</a></h2>
+      </header>
+      <footer>
+        <p class="post-info"></p>
+      </footer>
+      <content>
+        <div id="content">
+          <p>Enter your particulars for the ticket</p>
+          <form name="contact" action="./contact.php" method="post">
+            <input type="text" name="contactLastName" style="width:100%;" placeholder="Last Name"/>
+            <br />
+            <input type="text" name="contactFirstName" style="width:100%;" placeholder="First Name"/>
+            <br />
+            <p>
+              <input type="radio" name="contactGender" value="male">
+              Male
+              <input type="radio" name="contactGender" value="female">
+              Female
+              <input type="radio" name="contactGender" value="other">
+              Other </p>
+            <p>
+              <textarea name="contactAddress" style="width:100%;" placeholder="Address"></textarea>
+            </p>
+            
+            <p>
+            <input type="email" name="contactEmail" style="width:100%;" placeholder= "Email address"/>
+            </p>
+            
+            <p>
+              <input type="tel" name="contactPhone" style="width:100%" placeholder="Phone Number">
+            </p>
+            <p>
+              <select name="contactTix">
+                <option value="1">One (1) ticket - SGD 10</option>
+                <option value="2">Two (2) tickets - SGD 20</option>
+                <option value="3">Three (3) tickets - SGD 30</option>
+                <option value="4">Four (4) tickets - SGD 40</option>
+              </select>
+            </p>
+            <p>
+              <textarea name="contactComments" style="width:100%;" placeholder="Special requests"></textarea>
+              <br />
+            </p>
+            <button class="btnBuyTixSubmit" type="submit" name="submit">Insert</button>
+            <button class="btnBuyTixSubmit" type="reset">Reset</button>
+          </form>
+        </div>
+      </content>
+    </article>
+    <article class="bottomcontent">
+      <header>
+        <h2>Summary of Tickets</h2>
+      </header>
+      <footer>
+        <p class="post-info"></p>
+      </footer>
+      <content>
+      	<div  class="scrollmenu">
+        <p></p>
+        <table width="200%" border="1">
+          <tr>
+            <td>ID</td>
+            <td>Last Name</td>
+            <td>First Name</td>
+            <td>Gender</td>
+            <td>Address</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Tickets</td>
+            <td>Special Requests</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><button type="button" style="width:100%">Edit</button></td>
+            <td><button type="button" style="width:100%">Delete</button></td>
+          </tr>
+        </table>
+        </div>
+		
+      </content>
+    </article>
+  </div>
+</div>
+<footer class="mainFooter">
+  <p>Copyright &copy; 2015 <a href="#">webdesigner</a></p>
+  <p> Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>. </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My HTML5 Webpage</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" type="text/css" />
+  
+  <link rel="stylesheet" href="dropDownMenu/css/menumaker.css" type="text/css" />
+    
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  
+  <style>
+  .ui-menu { width: 150px; }
+  </style>
+</head>
+
+<body class="body">
+  <header class="mainHeader">
+    <img src="img/FC_Barcelona_logo.png" width="100">
+
+    <nav><ul>
+      <li class="active"><a href="#">News</a></li>
+      <li><a href="./football.html">Football</a></li>
+      <li><a href="./tickets.html">Tickets</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul></nav>
+    
+<!--    
+    <div id="cssmenu">
+      <ul>
+        <li><a href="">Item</a></li>
+        <li><a href="">Item</a></li>
+        <li><a href="">Item</a></li>
+        <li><a href="">Item</a>
+            <ul>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+            </ul>
+        </li>
+      </ul>  
+    </div>
+-->
+    
+  </header>
+
+  <div class="mainContent">
+
+  <div class="content">
+    <article class="topcontent">
+      <header>
+      <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">Messi, Suárez, Rakitic, and Martens nominated for 2018 Ballon d’Or</a></h2>
+      </header>
+
+      <footer>
+      <p class="post-info">WWW.FCBARCELONA.COM - 08/10/2018 | 19:43</p>
+      </footer>
+
+      <content>
+        <p>The Argentinian, a five-time winner of the award, the Uruguayan, and the Croatian are among the 30 nominees, while the Dutch forward is a candidate for the women's award; the winners will be announced on December 3.</p>
+
+        <img src="img/Barca_News1.jpg" width="500" class="responsive"/>
+
+<!--
+        <video width="400" controls class="responsive">
+          <source src="img/BBB_320x180.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+-->
+
+      </content>
+    </article>
+
+    <article class="bottomcontent">
+      <header>
+      <h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">Barça players get personalized training shirts</a></h2>
+      </header>
+
+      <footer>
+      <p class="post-info">WWW.FCBARCELONA.COM - 08/10/2018 | 12:41</p>
+      </footer>
+
+      <content>
+      <p>After Barça's 1-1 tie against Valencia at Mestalla, Monday's workout at the Ciutat Esportiva gave the players their first chance to sport some new training gear — shirts that are personalized with the initials of each player.</p>
+
+      <img src="img/Barca_News2.jpg" width="400" class="responsive"/>
+
+      </content>
+
+    </article>
+  </div>
+
+  <aside class="top-sidebar">
+    <article>
+      <h2>Match 1</h2>
+      <img src="img/FC_Barca_Match1.png" class="responsive"/>
+      <button class="btnBuyTix"><a href="tickets.html">Buy Tickets</a></button>
+    </article>
+  </aside>
+
+  <aside class="middle-sidebar">
+    <article>
+      <h2>Match 2</h2>
+      <img src="img/FC_Barca_Match2.png" class="responsive"/>
+      <button class="btnBuyTix"><a href="tickets.html">Buy Tickets</a></button>
+    </article>
+  </aside>
+
+  <aside class="bottom-sidebar">
+    <article>
+      <h2>Match 3</h2>
+      <img src="img/FC_Barca_Match3.png" class="responsive"/>
+      <button class="btnBuyTix"><a href="tickets.html">Buy Tickets</a></button>
+    </article>
+  </aside>
+
+  </div>
+
+  <footer class="mainFooter">
+
+  <p>Copyright &copy; 2015 <a href="#">webdesigner</a></p>
+  <p> Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>. </p>
+  </footer>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="dropDownMenu/js/menumaker.js"></script>
+  
+  <script>
+  $( function() {
+//    $( "#menu" ).menu();
+	
+	$("#cssmenu").menumaker();
+  } );
+  </script>
+    
+    
+</body>
+</html>

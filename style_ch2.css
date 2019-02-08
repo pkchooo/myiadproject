@@ -1,0 +1,21 @@
+
+h1 {
+  font-size: 72px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  color: tomato;
+  background-color: #99f0ee;
+}
+
+div#mytag {
+  font-size: 42px;
+  color: green;
+}
+
+div#first {
+  font-size: 32px;
+   color : #ff0000;
+}
+
+#id    { color: red; }

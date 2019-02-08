@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<style>
+	* {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	button {
+		border-radius: 5px;
+		box-shadow: 3px 3px 5px gray;
+	}
+	
+	#contactBtnSubmit, #contactBtnReset {
+		width: 45%;
+		margin: 10px 3px 10px 3px;
+		padding: 5px;
+	}
+	
+	#contactForm {
+		width: 40%;
+		margin: 3px;
+		padding: 5px;
+		background-color: beige;
+	}
+	
+	#contactLN, #contactFN, #contactFS, #contactCTY, #contactRGN, #contactEM {
+		width: 90%;
+		margin: 3px;
+		border-radius: 3px;
+		font-size: 14px;
+	}
+	
+	#contactAdd1, #contactAdd2, #contactZIP, #contactCTY {
+		width: 95%;
+		margin: 3px;
+		border-radius: 3px;
+		font-size: 14px;
+	}
+
+	#contactFrmUpp, #contactFrmLow {
+		margin: 10px 5px 10px 5px;
+		background-color:white;
+		padding: 5px 20px 5px 20px;
+
+	}
+
+</style>
+
+</head>
+<body>
+	<form id="contactForm">
+  	<div id="contactFrmUpp">
+      	<h3>Contact Form</h3>
+				<p>
+        Let us know your questions, suggestions, and concerns by filling out the contact form below.
+        </p>
+    </div>
+    
+    <div id="contactFrmLow">
+    
+    <div id="contactFrmLow1">
+    <table width="100%" border="0">
+    <tr>
+      <td>&nbsp;Name</td>
+      <td>
+        <input type="text" id="contactFN" name="contactFirstName" placeholder="First Name">
+      </td>
+      <td>
+      <input type="text" id="contactLN" name="contactLastName" placeholder="Last Name">
+			</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Email</td>
+      <td>
+      <input type="email" id="contactEM" name="contactEmail" placeholder= "Email address"/>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Address</td>
+      <td colspan="2">
+      <textarea id="contactAdd1" name="contactAddress1" placeholder="Street Address"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">
+      <textarea id="contactAdd2" name="contactAddress2" placeholder="Street Address Line 2"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="text" id="contactCTY" name="contactCity" placeholder="City"></td>
+      <td><input type="text" id="contactRGN" name="contactRegion" placeholder="Region"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="text" id="contactZIP" name="contactPostalZIP" placeholder="Postal/ZIP Code">
+      </td>
+      <td>
+      <select id="contactCTY" name="contactCountry">
+        <option value="1">Romania</option>
+        <option value="2">Singapore</option>
+        <option value="3">Thailand</option>
+        <option value="4">United States</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Verification</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+  </table>
+  
+    </div>
+    
+    <button id="contactBtnSubmit" type="submit">Submit</button>
+
+    </div>
+    
+<!--  
+  	<h3>Registration Form</h3>
+  
+  	<p>
+  	<input type="text" id="contactLN" name="contactLastName" placeholder="Last Name">
+    </p>
+    
+    <p>
+      <input type="text" id="contactFN" name="contactFirstName" placeholder="First Name">
+    </p>
+
+    <p>
+    <fieldset id="contactFS">
+    	<legend>Gender</legend>
+      
+      <input type="radio" name="contactGender" value="male">
+      Male
+      <input type="radio" name="contactGender" value="female">
+      Female
+      <input type="radio" name="contactGender" value="other">
+      Other 
+    </fieldset>
+    </p>
+    
+    <p>
+      <textarea id="contactAdd" name="contactAddress" placeholder="Address"></textarea>
+    </p>
+    
+    <p>
+    <input type="email" id="contactEM" name="contactEmail" placeholder= "Email address"/>
+    </p>    
+    
+		<p>
+      <input type="tel" id="contactPH" name="contactPhone" placeholder="Phone Number">
+    </p>    
+    
+    <p>
+      <select id="contactTX" name="contactTickets">
+        <option value="1">One (1) ticket - SGD 10</option>
+        <option value="2">Two (2) tickets - SGD 20</option>
+        <option value="3">Three (3) tickets - SGD 30</option>
+        <option value="4">Four (4) tickets - SGD 40</option>
+      </select>
+    </p>
+    
+    <p>
+      <textarea id="contactCM" name="contactComments" placeholder="Special requests"></textarea>
+    </p>
+    
+    <button id="contactBtnSubmit" type="submit">Submit</button>
+    
+    <button id="contactBtnReset" type="reset">Reset</button>
+-->    
+  </form>
+  
+  <div id="output">Label</div>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	
+  <script>
+	$(document).ready(function() {
+		
+		$("#contactLN").change(function() {
+			var temp = $("#contactLN").val();
+	
+			$("#output").html(temp);		
+		});
+
+	});
+  </script>
+
+	
+</body>
+</html>
